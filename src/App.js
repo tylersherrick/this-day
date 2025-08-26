@@ -8,7 +8,7 @@ function App() {
     const today = new Date();
     return today.toISOString().split("T")[0];
   });
-  const [sortNewestFirst, setSortNewestFirst] = useState(false);
+  const [sortNewestFirst, setSortNewestFirst] = useState(true);
 
   const fetchEvents = async (selectedDate) => {
     setLoading(true);
@@ -42,6 +42,7 @@ function App() {
     <div>
       <h1>This Day in History</h1>
       <div>
+       <div className="controls">
         <input
           type="date"
           value={date}
@@ -50,6 +51,7 @@ function App() {
         <button onClick={() => setSortNewestFirst(!sortNewestFirst)}>
           {sortNewestFirst ? "Sort Oldest → Newest" : "Sort Newest → Oldest"}
         </button>
+      </div>
       </div>
       {loading ? (
         <p>Loading...</p>
