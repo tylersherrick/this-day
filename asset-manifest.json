@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//tylersherrick.github.io/this-day/static/css/main.318387b0.css",
+    "main.js": "//tylersherrick.github.io/this-day/static/js/main.aa090c7f.js",
+    "static/js/453.2c155c2e.chunk.js": "//tylersherrick.github.io/this-day/static/js/453.2c155c2e.chunk.js",
+    "index.html": "//tylersherrick.github.io/this-day/index.html",
+    "main.318387b0.css.map": "//tylersherrick.github.io/this-day/static/css/main.318387b0.css.map",
+    "main.aa090c7f.js.map": "//tylersherrick.github.io/this-day/static/js/main.aa090c7f.js.map",
+    "453.2c155c2e.chunk.js.map": "//tylersherrick.github.io/this-day/static/js/453.2c155c2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.318387b0.css",
+    "static/js/main.aa090c7f.js"
+  ]
+}
