@@ -23,6 +23,7 @@ function App() {
       }
       const data = await res.json();
       setEvents(data.events || []);
+      console.log(data);
     } catch (err) {
       setEvents([]);
     } finally {
@@ -61,7 +62,18 @@ function App() {
         <ul>
           {sortedEvents.map((event, index) => (
             <li key={index}>
-              <strong>{event.year}</strong>: {event.text || event.title}
+              <strong>{event.year}</strong>:{" "}
+              {event.pages && event.pages[0] ? (
+                <a
+                  href={event.pages[0].content_urls.desktop.page}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {event.text || event.title}
+                </a>
+              ) : (
+                event.text || event.title
+              )}
             </li>
           ))}
         </ul>
